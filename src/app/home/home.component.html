@@ -1,0 +1,89 @@
+<div class="main">
+  <h4 class="text-center">Interaction Client</h4>
+  <!-- <div class="container" style="background-image: url('../assets/img/se.png'); background-size: cover;background-repeat: repeat; background-position: top center;">
+    <div class="row text-center">
+      <div class="col-md-12 col-md-offset-2">
+        <h5>FEDEX</h5>
+      </div>
+    </div> -->
+    <div class="row text-center">
+        <div class="col-md-2"></div>
+      <div class="col-md-2 pt-4 pr-0" >ContactID :</div>
+      <div class="col-md-4 pt-3 pr-4">
+         <input type="text" class="form-control" [(ngModel)]="idVal">
+   
+      </div>
+     <div class="col-md-4"></div>
+    </div><br>
+    <div class="row text-center submitBtn">
+      <div class="col-md-12">
+        <button class="btn btn-primary" (click)="getContactId(idVal)">
+          Submit
+        </button>
+      </div>
+    </div>
+    <div class="row" *ngIf="submit">
+        <div class="col-lg-1"></div>
+        
+        <div class="col-lg-10">
+          <table class="table table-bordered table-responsive">
+            <thead>
+                <tr >
+                    <th>ContactID</th>
+                    <th>InteractionType</th>
+                    <th>InteractionSubType</th>
+                    <th>InteractionTimestamp</th>
+                    <th>CommunicationType</th>
+                    <th>CommunicationValue</th>
+                    <th>SourceSystem</th>
+                    <th>SourceSystemId</th>
+                    <th>SourceSystemRefIdType</th>
+                    <th>SourceSystemRefId</th>
+                    <th>Comment</th>
+                    <th>Domain</th>
+                    <th>MajorVersion</th>
+                    <th>MinorVersion</th>
+                    <th>HighestSeverity</th>
+                    <th>Severity</th>
+                    <th>Code</th>
+                    <th>Message</th>
+                
+                  
+                    
+                  </tr>
+            </thead>
+            <tbody>
+                <tr
+        *ngFor="let i of intList">
+ 
+        
+          <td>{{i.contactId}}</td>
+          <td>{{i.interactionType}}</td>
+          <td>{{i.interactionSubType}}</td>
+          <td>{{i.interactionTimestamp}}</td>
+          <td>{{i.communicationType}}</td>
+          <td>{{i.communicationValue}}</td>
+          <td>{{i.sourceSystemDetail.sourceSystem}}</td>
+          <td>{{i.sourceSystemDetail.sourceSystemId}}</td>
+          <td>{{i.sourceSystemDetail.sourceSystemRefIdType}}</td>
+          <td>{{i.sourceSystemDetail.sourceSystemRefId}}</td>
+          <td>{{i.comment}}</td>
+          <td>{{i.domain}}</td>
+          <td>{{i.majorVersion}}</td>
+          <td>{{i.minorVersion}}</td>
+          <td>{{interactioninfo.highestSeverity}}</td>
+          <td>{{interactioninfo.notifications.severity}}</td>
+          <td>{{interactioninfo.notifications.code}}</td>
+          <td>{{interactioninfo.notifications.message}}</td>
+        </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <div class="col-lg-1">
+    </div>
+    
+   
+    
+   
+  </div>

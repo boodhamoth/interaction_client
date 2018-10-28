@@ -1,0 +1,58 @@
+/* .main{
+    padding-top:15px;
+    padding-bottom:270px;
+    max-width:100%;
+    height:auto;
+    background: url(../../assets/img/my.png); 
+    position: relative;
+
+} */
+
+
+.main{
+    padding-top:15px;
+    padding-bottom:600px;
+    max-width:100%;
+    height:auto;
+     /* background: url(../../assets/img/lo.png);   */
+    position: relative;
+
+}
+.container{
+    width:400px;
+    margin-top:250px;
+}
+/* .container{
+    width:400px;
+    margin:160px auto;
+    margin-top:120px;
+    height: 325px;
+   
+}
+.input{
+    background-repeat: repeat;
+    position: absolute;
+    top:90px;
+    left:50px;
+    width:300px;
+    margin:0px auto;
+}
+#repeat { background-repeat: repeat; } */
+
+
+
+
+/* styling for the Pen */
+
+body { font-family: sans-serif; }
+
+input[type=text]{
+    border:1px solid black;
+}
+.submitBtn{
+    margin-bottom: 2rem
+}
+table{
+height:500 px;
+overflow: scroll;
+}
